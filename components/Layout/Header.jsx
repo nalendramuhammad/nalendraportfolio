@@ -11,7 +11,7 @@ export default function Header() {
         <Link href={"/experience"}>
           <p href="">Experience</p>
         </Link>
-        <Link href={"/"}>
+        <Link href={"/portfolio"}>
           <p href="">Portfolio</p>
         </Link>
       </div>
