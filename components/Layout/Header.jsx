@@ -1,15 +1,24 @@
 import style from "@/styles/Layout/Header.module.scss";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <div className={`${style.navbar}`}>
       <div className={`${style.navbarLeft}`}>
-        <a href="#">Home</a>
-        <a href="#">Experience</a>
-        <a href="#">Portfolio</a>
+        <Link href={"/"}>
+          <p href="">Home</p>
+        </Link>
+        <Link href={"/experience"}>
+          <p href="">Experience</p>
+        </Link>
+        <Link href={"/"}>
+          <p href="">Portfolio</p>
+        </Link>
       </div>
       <div className={`${style.navbarRight}`}>
-        <a href="#">Contact</a>
+        <Link href={"/"}>
+          <p href="">Contact</p>
+        </Link>
       </div>
     </div>
   );
